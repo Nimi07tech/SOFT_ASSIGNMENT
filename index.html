@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f0f0f">
+  <title>Kannae Kanmaniye | Nimalan</title>
+  <meta name="description" content="Watch Kannae Kanmaniye from Tere Ishk Mein in a responsive YouTube-style player.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-frame" id="page-frame">
+    <div class="player-wrapper" id="player-wrapper">
+      <div id="youtube-player" aria-label="YouTube video player"></div>
+
+      <div class="player-overlay" id="player-overlay">
+        <img class="player-thumbnail" id="player-thumbnail" alt="Kannae Kanmaniye video thumbnail">
+        <div class="player-gradient-overlay"></div>
+
+        <div class="overlay-top-bar">
+          <div class="overlay-video-info">
+            <div class="avatar avatar-small" aria-hidden="true">T</div>
+            <span class="overlay-video-title" id="overlay-video-title">Full Video: Kannae Kanmaniye | Tere Ishk Mein</span>
+          </div>
+          <button type="button" class="overlay-share-btn" id="overlay-share-btn" title="Share video" aria-label="Share video">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"/></svg>
+            <span>Share</span>
+          </button>
+        </div>
+
+        <button type="button" class="center-play-btn" id="center-play-btn" title="Play video" aria-label="Play video">
+          <svg viewBox="0 0 68 48" width="68" height="48" aria-hidden="true">
+            <path class="play-btn-bg" d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"/>
+            <path d="M45 24L27 14v20z" fill="#fff"/>
+          </svg>
+        </button>
+
+        <a class="watch-on-youtube-badge" id="watch-on-youtube-badge" href="https://www.youtube.com/watch?v=uA2d7HZkqO4" target="_blank" rel="noopener noreferrer" title="Watch on YouTube">
+          <span class="watch-on-text">Watch on</span>
+          <span class="youtube-logo-badge"><span class="yt-pill-icon"><svg viewBox="0 0 24 24" width="10" height="10" fill="#000" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span><span class="yt-text-badge">YouTube</span></span>
+        </a>
+        <p class="player-error" id="player-error" hidden>Video couldn't load here. Try opening it on YouTube.</p>
+      </div>
+    </div>
+
+    <div class="video-header-row">
+      <h1 class="video-title" id="video-title">Full Video: Kannae Kanmaniye | Tere Ishk Mein | Dhanush, Kriti | A.R. Rahman</h1>
+      <div class="action-buttons" role="group" aria-label="Video actions">
+        <div class="reaction-group">
+          <button type="button" class="action-btn" id="like-btn" title="Like" aria-label="Like" aria-pressed="false">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z" fill="currentColor"/></svg>
+            <span>Like</span>
+          </button>
+          <button type="button" class="action-btn" id="dislike-btn" title="Dislike" aria-label="Dislike" aria-pressed="false">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.58-6.59c.37-.36.59-.86.59-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" fill="currentColor"/></svg>
+            <span>Dislike</span>
+          </button>
+        </div>
+        <button type="button" class="action-btn" id="share-btn" title="Share" aria-label="Share">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z" fill="currentColor"/></svg><span>Share</span>
+        </button>
+      </div>
+    </div>
+
+    <a class="channel-row" id="channel-link" href="https://www.youtube.com/@TSeriesTamil" target="_blank" rel="noopener noreferrer">
+      <div class="avatar channel-avatar" aria-hidden="true">T</div>
+      <div class="channel-info">
+        <span class="channel-name">T-Series Tamil</span>
+        <span class="channel-subscribers">Official video publisher</span>
+      </div>
+      <span class="channel-note">Open channel ↗</span>
+    </a>
+
+    <section class="description-card" aria-label="Video and channel description">
+      <div class="description-section">
+        <h2 class="description-heading">About this video</h2>
+        <div class="description-collapsible" id="video-desc-wrap">
+          <p class="description-body" id="video-description">Kannae Kanmaniye is a song from Tere Ishk Mein, featuring Dhanush and Kriti Sanon, with music composed by A. R. Rahman. This page embeds the video from YouTube; playback and availability are controlled by YouTube and the video owner.</p>
+        </div>
+        <button type="button" class="show-more-btn" id="video-show-more" aria-expanded="false">Show more</button>
+      </div>
+      <div class="description-section">
+        <h2 class="description-heading">About the channel</h2>
+        <div class="description-collapsible" id="channel-desc-wrap">
+          <p class="description-body" id="channel-description">T-Series Tamil publishes Tamil film songs, music videos, and soundtrack content. Visit the official channel on YouTube for more releases and updates.</p>
+        </div>
+        <button type="button" class="show-more-btn" id="channel-show-more" aria-expanded="false">Show more</button>
+      </div>
+    </section>
+    <footer class="page-footer">Fan-made player interface. Video content is hosted by YouTube and remains subject to YouTube's terms and availability.</footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+    <span id="toast-message">Link copied</span>
+  </div>
+  <script src="script.js"></script>
+  <script async src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
